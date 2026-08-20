@@ -429,6 +429,9 @@ span {
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
+  .about-content h2 {
+  text-align: center;
+}
   .projects h2 {
     margin-bottom: 3rem;
   }
