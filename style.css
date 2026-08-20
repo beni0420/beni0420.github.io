@@ -63,6 +63,7 @@ body {
   font-size: 3.6rem;
   color: var(--main-color);
   display: none;
+  cursor:pointer;
 }
 section {
   min-height: 100vh;
@@ -186,23 +187,11 @@ span {
   text-align: left;
   line-height: 1.5;
 }
-.about-content h3 {
-  font-size: 2.6rem;
-}
 .about-content p {
   font-size: 2rem;
   margin: 2rem 0 3rem;
   line-height: 1.9;
 }
-/*.about-content .btn {
-  background: white;
-  color: var(--main-color);
-  border: 3px solid var(--main-color);
-}
-.about-content .btn:hover {
-  background-color: var(--main-color);
-  color: white;
-}*/
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -229,7 +218,8 @@ span {
 }
 .projects-box {
   border: 3px solid var(--main-color);
-  height: 600px;
+  min-height: 600px;
+  height:auto;
   border-radius: 1em;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -247,20 +237,21 @@ span {
   text-align: left;
   justify-content: center;
   align-items: baseline;
-  padding: 5em;
+  padding: 3em;
 }
 .projects-info h4 {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 500;
 }
 .projects-info p {
   margin-top: 2rem;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }
 .projects-box img {
   margin-top: 3rem;
-  width: 22vw;
+  width: 100%;
+  height:auto;
 }
 .projects-box a {
   color: inherit;
@@ -320,7 +311,7 @@ span {
   text-align: center;
   border-radius: 50%;
   margin: 0 10px;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 .footer .social a:hover {
   transform: scale(1.2) translateY(-10px);
@@ -442,6 +433,33 @@ span {
     margin-bottom: 3rem;
   }
   .projects-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1fr);
+    gap: 1.5;
+    margin:0;
   }
+  .projects-box {
+  height: auto;
+  min-height: 0;
+}
+
+.projects-box .projects-info {
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.projects-info h4 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects-info p {
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+.projects-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 }
