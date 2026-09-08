@@ -466,3 +466,22 @@ span {
   display: block;
 }
 }
+
+.contador-centrado {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 80px; 
+  overflow: hidden;
+}
+
+#sfcm79nz76ku5q46uhxmtj5te13yha199xx {
+  display: inline-block;
+  transform: scale(0.7);
+  transform-origin: top center;
+  padding: 0;
+  margin: 0;
+}
